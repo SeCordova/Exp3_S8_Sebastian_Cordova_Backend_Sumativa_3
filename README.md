@@ -151,6 +151,4 @@ Exp3_S8_Sebastian_Cordova/
 `-- README.md
 ```
 
-## Comentario
 
-Se evitó el uso de BFF para mantener el proyecto centrado en microservicios independientes, aplicando descubrimiento, seguridad y resiliencia directamente sobre los servicios, según la retroalimentación de la entrega anterior.
