@@ -122,7 +122,20 @@ Luego repetir varias veces el retiro. `ms-operaciones` responderá con el fallba
 docker start ms-cuentas
 ```
 
+## Estructura resumida
 
+```text
+Exp3_S8_Sebastian_Cordova/
+|-- config-server/
+|-- eureka-server/
+|-- ms-cuentas/
+|-- ms-operaciones/
+|-- ms-transacciones/
+|-- docker/
+|   |-- keycloak/
+|   `-- mysql/
+|-- docker-compose.yml
+|-- pom.xml
 `-- README.md
 ```
 
