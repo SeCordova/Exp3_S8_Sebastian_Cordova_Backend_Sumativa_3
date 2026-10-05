@@ -1,0 +1,35 @@
+{
+  "realm": "banco",
+  "enabled": true,
+  "registrationAllowed": false,
+  "loginWithEmailAllowed": true,
+  "clients": [
+    {
+      "clientId": "bank-client",
+      "name": "bank-client",
+      "enabled": true,
+      "publicClient": true,
+      "directAccessGrantsEnabled": true,
+      "standardFlowEnabled": false,
+      "protocol": "openid-connect"
+    }
+  ],
+  "users": [
+    {
+      "username": "seba",
+      "enabled": true,
+      "firstName": "Sebastian",
+      "lastName": "Cordova",
+      "email": "seba@banco.cl",
+      "emailVerified": true,
+      "requiredActions": [],
+      "credentials": [
+        {
+          "type": "password",
+          "value": "seba123",
+          "temporary": false
+        }
+      ]
+    }
+  ]
+}

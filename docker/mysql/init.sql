@@ -1,0 +1,24 @@
+CREATE DATABASE IF NOT EXISTS bank_cloud;
+USE bank_cloud;
+
+CREATE TABLE IF NOT EXISTS cuentas (
+  id BIGINT AUTO_INCREMENT PRIMARY KEY,
+  cuenta_id BIGINT NOT NULL UNIQUE,
+  nombre VARCHAR(100) NOT NULL,
+  saldo DOUBLE NOT NULL,
+  tipo VARCHAR(40) NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS transacciones (
+  id BIGINT AUTO_INCREMENT PRIMARY KEY,
+  cuenta_id BIGINT NOT NULL,
+  monto DOUBLE NOT NULL,
+  tipo VARCHAR(40) NOT NULL,
+  fecha DATETIME NOT NULL
+);
+
+INSERT INTO cuentas (cuenta_id,nombre,saldo,tipo) VALUES
+(101,'Ana Perez',1500000,'CORRIENTE'),
+(102,'Luis Soto',850000,'VISTA'),
+(103,'Maria Rojas',2250000,'CORRIENTE')
+ON DUPLICATE KEY UPDATE nombre=VALUES(nombre);
