@@ -122,32 +122,7 @@ Luego repetir varias veces el retiro. `ms-operaciones` responderá con el fallba
 docker start ms-cuentas
 ```
 
-## Evidencias recomendadas
 
-Para la entrega se pueden sacar estas capturas:
-
-1. `docker compose up --build` con los contenedores levantados.
-2. Eureka mostrando los tres microservicios registrados.
-3. Obtención del token OAuth 2.0 desde Keycloak.
-4. Consulta de cuenta con token.
-5. Retiro realizado correctamente.
-6. Consulta de `ms-transacciones` mostrando el retiro recibido por Kafka.
-7. Prueba de Resilience4j deteniendo `ms-cuentas` y mostrando el fallback.
-
-## Estructura resumida
-
-```text
-Exp3_S8_Sebastian_Cordova/
-|-- config-server/
-|-- eureka-server/
-|-- ms-cuentas/
-|-- ms-operaciones/
-|-- ms-transacciones/
-|-- docker/
-|   |-- keycloak/
-|   `-- mysql/
-|-- docker-compose.yml
-|-- pom.xml
 `-- README.md
 ```
 
